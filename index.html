@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Begad Khaled is a young programmer passionate about learning HTML, web development, AI, and building future projects."
+    />
+    <meta
+      name="keywords"
+      content="Begad Khaled, programmer, HTML, web development, artificial intelligence, programming journey"
+    />
+    <meta property="og:title" content="Begad Khaled | Young Programmer & Future Builder" />
+    <meta
+      property="og:description"
+      content="A young programmer learning HTML, web development, and AI while building toward future projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#101827" />
+    <title>Begad Khaled | Young Programmer & Future Builder</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23183044'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='28' font-family='Arial, sans-serif'%3EBK%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const preferred = saved === 'light' || saved === 'dark' ? saved : systemDark ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', preferred);
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#home" class="brand" aria-label="Begad Khaled home">
+          <span class="brand-mark">BK</span>
+          <span class="brand-text">Begad Khaled</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div id="nav-menu" class="nav-menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#goals">Goals</a>
+          <a href="#contact">Contact</a>
+          <label class="theme-picker" for="theme-select">
+            <span class="sr-only">Theme</span>
+            <select id="theme-select" aria-label="Choose a color theme">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+              <option value="system">System</option>
+            </select>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Young Programmer & Future Builder</span>
+            <h1>Begad Khaled</h1>
+            <p class="lead">
+              A young programmer passionate about programming and artificial intelligence, currently learning and working toward
+              building complete websites and powerful projects.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#about">Explore My Journey</a>
+              <a class="btn btn-secondary" href="#projects">View My Projects</a>
+            </div>
+            <ul class="hero-details" aria-label="Highlights about Begad">
+              <li>Learning through YouTube</li>
+              <li>Focused on HTML, CSS, JavaScript, Python</li>
+              <li>Building ideas and experimenting with AI</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="avatar-card" aria-label="Abstract developer avatar">
+              <div class="avatar-ring">
+                <div class="avatar-core">
+                  <span>BK</span>
+                </div>
+              </div>
+              <div class="floating-tag tag-one">HTML</div>
+              <div class="floating-tag tag-two">AI</div>
+              <div class="floating-tag tag-three">Future</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-soft">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">About Me</span>
+            <h2>At the start of an ambitious journey</h2>
+          </div>
+          <div class="about-grid reveal">
+            <div class="about-card">
+              <p>
+                I am <strong>Begad</strong>, 14 years old, and I am currently in the 3rd year of Preparatory School at a Government
+                Experimental Language School. I am a young beginner programmer who loves learning, experimenting, and building ideas.
+              </p>
+              <p>
+                I am passionate about programming and artificial intelligence, and I learn mainly through YouTube, especially from
+                Elzero Web School. My goal is to keep improving and eventually build real projects, create websites for people,
+                and explore the world of AI more deeply.
+              </p>
+            </div>
+            <div class="about-card highlight-card">
+              <h3>What I want to become</h3>
+              <ul>
+                <li>Build real websites and complete products</li>
+                <li>Create projects that solve real problems</li>
+                <li>Learn multiple programming languages</li>
+                <li>Grow my skills in AI and web development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="journey">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Programming Journey</span>
+            <h2>From beginner steps to bigger ambitions</h2>
+          </div>
+          <div class="timeline reveal" aria-label="Programming journey timeline">
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-label">Starting Point</span>
+                <h3>Beginning the programming journey</h3>
+                <p>Started learning the basics and exploring how software is built.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-label">HTML</span>
+                <h3>Developing a strong foundation</h3>
+                <p>Built a good understanding of HTML and the structure of web pages.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-label">Learning</span>
+                <h3>Studying through YouTube</h3>
+                <p>Continues learning from online tutorials, especially Elzero Web School.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-label">Experimentation</span>
+                <h3>Trying new ideas and AI exploration</h3>
+                <p>Worked on an experimental AI project called JAKE, which taught valuable lessons and motivated further growth.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-label">Next Steps</span>
+                <h3>Learning CSS, JavaScript, Python, and C++</h3>
+                <p>Expanding the skills needed to build more advanced websites and larger projects.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-label">Future</span>
+                <h3>Building complete websites and powerful products</h3>
+                <p>Moving toward bigger goals in web development, AI, and future digital projects.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-soft">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Skills</span>
+            <h2>Current knowledge and future learning path</h2>
+          </div>
+          <div class="skills-grid reveal">
+            <div class="skill-group">
+              <h3>Current Knowledge</h3>
+              <div class="chip-list">
+                <span class="chip">HTML</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Tools</h3>
+              <div class="chip-list">
+                <span class="chip">Visual Studio Code</span>
+                <span class="chip">Atom</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Currently Learning</h3>
+              <div class="chip-list">
+                <span class="chip learning">CSS</span>
+                <span class="chip learning">JavaScript</span>
+                <span class="chip learning">Python</span>
+                <span class="chip learning">C++</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Projects</span>
+            <h2>Experiments and learning experiences</h2>
+          </div>
+
+          <div class="project-grid reveal">
+            <article class="project-card featured">
+              <div class="project-header">
+                <span class="project-tag">AI / Experimental</span>
+                <span class="status-badge">Experimental Project</span>
+              </div>
+              <h3>JAKE</h3>
+              <p>
+                Begad previously attempted to build an AI project called JAKE. It did not succeed as hoped, but it was an important
+                learning experience that helped motivate him to continue learning and building.
+              </p>
+              <div class="project-meta">
+                <span>Learning experience</span>
+                <span>AI exploration</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="interests" class="section section-soft">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Interests</span>
+            <h2>Life beyond code</h2>
+          </div>
+          <div class="interest-grid reveal">
+            <div class="interest-card"><span>💻</span><h3>Programming</h3></div>
+            <div class="interest-card"><span>⚽</span><h3>Football</h3></div>
+            <div class="interest-card"><span>🏊</span><h3>Swimming</h3></div>
+            <div class="interest-card"><span>🎮</span><h3>Gaming</h3></div>
+            <div class="interest-card"><span>🔥</span><h3>Free Fire</h3></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="goals" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Future Goals</span>
+            <h2>Ambitious plans for the future</h2>
+          </div>
+          <div class="goal-grid reveal">
+            <article class="goal-card"><h3>Mechanical Engineering</h3></article>
+            <article class="goal-card"><h3>Study in Italy</h3></article>
+            <article class="goal-card"><h3>Work in Switzerland</h3></article>
+            <article class="goal-card"><h3>Learn multiple languages</h3></article>
+            <article class="goal-card"><h3>Build complete websites</h3></article>
+            <article class="goal-card"><h3>Create powerful projects</h3></article>
+            <article class="goal-card"><h3>Explore AI</h3></article>
+            <article class="goal-card"><h3>Build a dream PC</h3></article>
+            <article class="goal-card"><h3>Stream and play Free Fire</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="inspiration" class="section section-soft">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Inspiration</span>
+            <h2>People who influence my path</h2>
+          </div>
+          <div class="inspiration-grid reveal">
+            <div class="inspiration-card">
+              <h3>Father</h3>
+            </div>
+            <div class="inspiration-card">
+              <h3>Mother</h3>
+            </div>
+            <div class="inspiration-card">
+              <h3>Siblings</h3>
+            </div>
+            <div class="inspiration-card">
+              <h3>Cristiano Ronaldo</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-wrap reveal">
+          <div>
+            <span class="eyebrow">Contact</span>
+            <h2>Let’s build something meaningful</h2>
+            <p>
+              I am still building my journey, but I am serious about learning, experimenting, and improving. I am open to future
+              opportunities to learn and collaborate as I grow.
+            </p>
+          </div>
+          <div class="contact-card" aria-label="Contact information placeholders">
+            <div class="contact-item">
+              <span class="label">Email</span>
+              <strong>begadkiko@gmail.com</strong>
+            </div>
+            <div class="contact-item">
+              <span class="label">Email</span>
+              <strong>profirex1@gmail.com</strong>
+            </div>
+            <div class="contact-item">
+              <span class="label">WhatsApp</span>
+              <strong>01029993468</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Begad Khaled</p>
+        <p>Young programmer building a future through learning and persistence.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
